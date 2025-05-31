@@ -1,13 +1,6 @@
 from stats import count_words, count_characters, print_report
+from file import get_file_text
 import sys
-
-def get_file_text(path):
-    try:
-        with open(path) as f:
-            return f.read()
-    except Exception:
-        print("There was an error during runtime")
-        sys.exit(1)
 
 def main():
     path = sys.argv[1]
