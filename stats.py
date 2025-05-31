@@ -10,7 +10,7 @@ def count_characters(str):
         else:
             characters[character] = characters[character] + 1
     
-    return characters
+    return sort_characters(characters)
 
 def sort_dict(dict):
     return dict["number"]

@@ -1,4 +1,4 @@
-from stats import count_words, count_characters, sort_characters, print_report
+from stats import count_words, count_characters, print_report
 import sys
 
 def get_file_text(path):
@@ -14,7 +14,7 @@ def main():
     text = get_file_text(path)
 
     words_count = count_words(text)
-    characters_dictionary = sort_characters(count_characters(text))
+    characters_dictionary = count_characters(text)
 
     print_report(path, words_count, characters_dictionary)
 
